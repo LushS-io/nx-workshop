@@ -39,8 +39,7 @@
             "label": "shared"
           }
         ]
-      },
-      "alias": "d"
+      }
     }
   },
   "required": ["name"]
