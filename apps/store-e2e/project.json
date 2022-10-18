@@ -1,19 +1,19 @@
 {
-  "name": "nobu-e2e",
+  "name": "store-e2e",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/nobu-e2e/src",
+  "sourceRoot": "apps/store-e2e/src",
   "projectType": "application",
   "targets": {
     "e2e": {
       "executor": "@nrwl/cypress:cypress",
       "options": {
-        "cypressConfig": "apps/nobu-e2e/cypress.config.ts",
-        "devServerTarget": "nobu:serve:development",
+        "cypressConfig": "apps/store-e2e/cypress.config.ts",
+        "devServerTarget": "store:serve:development",
         "testingType": "e2e"
       },
       "configurations": {
         "production": {
-          "devServerTarget": "nobu:serve:production"
+          "devServerTarget": "store:serve:production"
         }
       }
     },
@@ -21,10 +21,10 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/nobu-e2e/**/*.{js,ts}"]
+        "lintFilePatterns": ["apps/store-e2e/**/*.{js,ts}"]
       }
     }
   },
-  "tags": ["scope:store", "type:app"],
-  "implicitDependencies": ["nobu"]
+  "tags": ["scope:store", "type:test"],
+  "implicitDependencies": ["store"]
 }
