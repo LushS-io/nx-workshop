@@ -33,12 +33,9 @@
       "@bg-hoard/store/util-formatters": [
         "libs/store/util-formatters/src/index.ts"
       ],
-      "@bg-hoard/util-dates": [
-        "libs/util-dates/src/index.ts"
-      ],
-      "@bg-hoard/util-interface": [
-        "libs/util-interface/src/index.ts"
-      ]
+      "@bg-hoard/util-dates": ["libs/util-dates/src/index.ts"],
+      "@bg-hoard/util-interface": ["libs/util-interface/src/index.ts"],
+      "@bg-hoard/util-notifications": ["libs/util-notifications/src/index.ts"]
     }
   },
   "exclude": [

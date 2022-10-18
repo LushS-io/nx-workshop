@@ -1,21 +1,30 @@
-name: Run CI checks
+name: Run CI checks # The name will show up on the GitHub Actions dashboard
 
-on: [pull_request]
-
-env:
-  NX_BRANCH: ${{ github.event.number }}
-  NX_RUN_GROUP: ${{ github.run_id }}
+on: [pull_request] # This workflow will run only on Pull Requests
 
 jobs:
-  build:
+  test-store: # give our job an ID
+    runs-on: ubuntu-latest # the image our job will run on
+    name: Test Store # the name that will appear on the Actions UI
+    steps: # what steps it will perform
+      - uses: actions/checkout@v3 # checkout whatever branch the PR is using
+        with:
+          fetch-depth: 0
+      - uses: bahmutov/npm-install@v1 # trigger an `npm install`
+      - run: npx nx test store # test the "store" project
+  test-api:
     runs-on: ubuntu-latest
-    name: Building affected apps
+    name: Test API
     steps:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
       - uses: bahmutov/npm-install@v1
+<<<<<<< HEAD
       - run: npx nx affected --target=build --base=origin/main --parallel
       - run: npx nx affected --target=test --base=origin/main --parallel
       - run: npx nx affected --target=lint --base=origin/main --parallel
       - run: npx nx affected --target=e2e --base=origin/main --parallel
+=======
+      - run: npx nx test api
+>>>>>>> main
