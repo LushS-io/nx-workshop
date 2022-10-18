@@ -11,13 +11,4 @@ jobs:
         with:
           fetch-depth: 0
       - uses: bahmutov/npm-install@v1 # trigger an `npm install`
-      - run: npx nx test store # test the "store" project
-  test-api:
-    runs-on: ubuntu-latest
-    name: Test API
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-      - uses: bahmutov/npm-install@v1
-      - run: npx nx test api
+      - run: npx nx affected --target=test --base=origin/main # test the "store" project

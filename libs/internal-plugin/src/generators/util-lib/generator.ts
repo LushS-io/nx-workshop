@@ -53,6 +53,8 @@ export default async function (tree: Tree, schema: UtilLibGeneratorSchema) {
 
   await libraryGenerator(tree, {
     name: `util-${schema.name}`,
+    directory: schema.directory,
+    tags: `type:util,scope:${schema.directory},scope:${schema.name}`
   });
 
   console.log('schema', schema);

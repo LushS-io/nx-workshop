@@ -10,6 +10,11 @@
     "test": "nx test"
   },
   "private": true,
+  "nx": {
+    "implicitDependencies": {
+      ".github/workflows/ci.yml": "*"
+    }
+  },
   "dependencies": {
     "@angular/animations": "~14.2.0",
     "@angular/cdk": "^14.2.0",
