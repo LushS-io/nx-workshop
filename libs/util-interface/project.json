@@ -1,6 +1,6 @@
 {
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "name": "util-interface",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/util-interface/src",
   "projectType": "library",
   "targets": {
@@ -20,5 +20,6 @@
       }
     }
   },
-  "tags": ["scope:shared", "type:util"]
+  "tags": ["scope:shared", "type:util"],
+  "implicitDependencies": []
 }

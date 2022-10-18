@@ -25,6 +25,6 @@
       }
     }
   },
-  "tags": ["scope:store", "type:test"],
-  "implicitDependencies": ["store"]
+  "tags": ["scope:store", "type:e2e"],
+  "implicitDependencies": ["store-ui-shared"]
 }
