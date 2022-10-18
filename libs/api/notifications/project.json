@@ -1,0 +1,12 @@
+{
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "name": "api-notifications",
+  "projectType": "library",
+  "sourceRoot": "libs/api/notifications/src",
+  "targets": {
+    "build": {
+      "executor": "@bg-hoard/internal-plugin:build"
+    }
+  },
+  "tags": []
+}
