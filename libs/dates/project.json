@@ -1,0 +1,12 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "name": "dates",
+  "projectType": "library",
+  "sourceRoot": "libs/dates/src",
+  "targets": {
+    "build": {
+      "executor": "@bg-hoard/internal-plugin:build"
+    }
+  },
+  "tags": []
+}
