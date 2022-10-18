@@ -87,6 +87,78 @@
       "cli": "nx",
       "package": "@nrwl/nx-workshop",
       "name": "complete-lab-11"
+    },
+    {
+      "version": "0.1.12",
+      "description": "Complete Lab 12",
+      "factory": "./src/migrations/complete-lab-12/complete-lab-12",
+      "cli": "nx",
+      "package": "@nrwl/nx-workshop",
+      "name": "complete-lab-12"
+    },
+    {
+      "version": "0.1.13",
+      "description": "Complete Lab 13a",
+      "factory": "./src/migrations/complete-lab-13/complete-lab-13a",
+      "cli": "nx",
+      "package": "@nrwl/nx-workshop",
+      "name": "complete-lab-13a"
+    },
+    {
+      "version": "0.1.13",
+      "description": "Complete Lab 13b",
+      "factory": "./src/migrations/complete-lab-13/complete-lab-13b",
+      "cli": "nx",
+      "package": "@nrwl/nx-workshop",
+      "name": "complete-lab-13b"
+    },
+    {
+      "version": "0.1.13",
+      "description": "Complete Lab 13c",
+      "factory": "./src/migrations/complete-lab-13/complete-lab-13c",
+      "cli": "nx",
+      "package": "@nrwl/nx-workshop",
+      "name": "complete-lab-13c"
+    },
+    {
+      "version": "0.1.14",
+      "description": "Complete Lab 14",
+      "factory": "./src/migrations/complete-lab-14/complete-lab-14",
+      "cli": "nx",
+      "package": "@nrwl/nx-workshop",
+      "name": "complete-lab-14"
+    },
+    {
+      "version": "0.1.15",
+      "description": "Complete Lab 15",
+      "factory": "./src/migrations/complete-lab-15/complete-lab-15",
+      "cli": "nx",
+      "package": "@nrwl/nx-workshop",
+      "name": "complete-lab-15"
+    },
+    {
+      "version": "0.1.16",
+      "description": "Complete Lab 16",
+      "factory": "./src/migrations/complete-lab-16/complete-lab-16",
+      "cli": "nx",
+      "package": "@nrwl/nx-workshop",
+      "name": "complete-lab-16"
+    },
+    {
+      "version": "0.1.17",
+      "description": "Complete Lab 17",
+      "factory": "./src/migrations/complete-lab-17/complete-lab-17",
+      "cli": "nx",
+      "package": "@nrwl/nx-workshop",
+      "name": "complete-lab-17"
+    },
+    {
+      "version": "0.1.18",
+      "description": "Complete Lab 18",
+      "factory": "./src/migrations/complete-lab-18/complete-lab-18",
+      "cli": "nx",
+      "package": "@nrwl/nx-workshop",
+      "name": "complete-lab-18"
     }
   ]
 }

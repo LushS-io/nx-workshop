@@ -14,16 +14,11 @@
       },
       "x-prompt": "What name would you like to use?"
     },
-    "tags": {
-      "type": "string",
-      "description": "Add tags to the project (used for linting)",
-      "alias": "t"
-    }, 
     "directory": {
       "type": "string",
-      "description": "A directory where the project is placed",
+      "description": "The scope of your lib.",
       "x-prompt": {
-        "message": "What directory would you like to place the lib in?",
+        "message": "Which directory do you want the lib to be in?",
         "type": "list",
         "items": [
           {
@@ -39,8 +34,7 @@
             "label": "shared"
           }
         ]
-      },
-      "alias": "d"
+      }
     }
   },
   "required": ["name"]
