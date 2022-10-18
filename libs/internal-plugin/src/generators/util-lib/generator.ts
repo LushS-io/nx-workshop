@@ -6,9 +6,11 @@ import {
   names,
   offsetFromRoot,
   Tree,
+  installPackagesTask
 } from '@nrwl/devkit';
 import * as path from 'path';
 import { UtilLibGeneratorSchema } from './schema';
+import { libraryGenerator } from '@nrwl/workspace/generators';
 
 interface NormalizedSchema extends UtilLibGeneratorSchema {
   projectName: string;
@@ -47,8 +49,16 @@ function addFiles(tree: Tree, options: NormalizedSchema) {
     generateFiles(tree, path.join(__dirname, 'files'), options.projectRoot, templateOptions);
 }
 
-export default async function (tree: Tree, options: UtilLibGeneratorSchema) {
-  const normalizedOptions = normalizeOptions(tree, options);
+export default async function (tree: Tree, schema: UtilLibGeneratorSchema) {
+
+  await libraryGenerator(tree, {
+    name: `util-${schema.name}`,
+  });
+
+  console.log('schema', schema);
+  
+
+  const normalizedOptions = normalizeOptions(tree, schema);
   addProjectConfiguration(
     tree,
     normalizedOptions.projectName,
@@ -66,4 +76,7 @@ export default async function (tree: Tree, options: UtilLibGeneratorSchema) {
   );
   addFiles(tree, normalizedOptions);
   await formatFiles(tree);
+  return () => {
+    installPackagesTask(tree);
+  };
 }
