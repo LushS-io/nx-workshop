@@ -11,4 +11,4 @@ jobs:
         with:
           fetch-depth: 0
       - uses: bahmutov/npm-install@v1 # trigger an `npm install`
-      - run: npx nx affected --target=test # test the "store" project
+      - run: npx nx affected --target=test --base=origin/main # test the "store" project
