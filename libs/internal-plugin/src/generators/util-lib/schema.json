@@ -22,6 +22,24 @@
     "directory": {
       "type": "string",
       "description": "A directory where the project is placed",
+      "x-prompt": {
+        "message": "What directory would you like to place the lib in?",
+        "type": "list",
+        "items": [
+          {
+            "value": "store",
+            "label": "store"
+          },
+          {
+            "value": "api",
+            "label": "api"
+          },
+          {
+            "value": "shared",
+            "label": "shared"
+          }
+        ]
+      },
       "alias": "d"
     }
   },
